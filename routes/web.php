@@ -37,3 +37,5 @@ Route::delete('/question/{question_id}/answer/{answer_id}', 'AnswerController@de
 Route::resources([
     'question' => 'QuestionController',
 ]);
+
+Route::get('/allQuestionsPage','AllQuestionsPageController@allQuestionsPage')->name('allQuestionsPage');
