@@ -56,6 +56,17 @@
                         <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
                         <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
                     @else
+                        <li>
+                            <form method="GET" action="/search" class="form-inline mt-2 mt-md-2" >
+                                <input class="form-control" type="text" name="search" placeholder="Search" aria-label="Search">
+                                <button type="submit" class="btn btn-outline-success" type="submit">Search</button>
+                            </form>
+
+
+                        </li>
+
+
+
                         <li><a class="nav-link" href="{{route('allQuestionsPage')}}">View All Questions</a></li>
                         <li class="nav-item dropdown">
                             <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>

@@ -1,5 +1,7 @@
 <?php
 
+use Illuminate\Http\Request;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -39,3 +41,8 @@ Route::resources([
 ]);
 
 Route::get('/allQuestionsPage','AllQuestionsPageController@allQuestionsPage')->name('allQuestionsPage');
+
+Route::get('/search', function (Request $request){
+    $result = App\Question::search($request->search)->get();
+    return view('result', compact('result'));
+});
