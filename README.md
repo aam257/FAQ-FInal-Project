@@ -7,19 +7,18 @@ To run the FAQ project:
 3. cp .env.example to .env
 4. run: php artisan key:generate
 
-5. In .env file copy lines 5a, 5b and 5c to setup algolia app id and search key:
+5. In .env file copy lines 6, 7 and 8 to setup algolia app id and search key:
 
-5a. SCOUT_QUEUE
-5b. ALGOLIA_APP_ID=X3NOGW7Y3S
-5c. ALGOLIA_SECRET=5d04bd62942979531790c87f3cac1a0f
+6. SCOUT_QUEUE
+7. ALGOLIA_APP_ID=X3NOGW7Y3S
+8. ALGOLIA_SECRET=5d04bd62942979531790c87f3cac1a0f
 
-6. setup database with sqlite or other https://laravel.com/docs/5.6/database
-7. Run: php artisan migrate
-8. Run phpunit tests unsing command: phpunit
-9. Run:  php artisan migrate:refresh --seed
-10. Setup in .env file: APP_URL=http://localhost:8000
-11. Setup run cofiguration on local host using port 8000 and run the web
-12. Run command: php artisan dusk
+9. setup database with sqlite or other https://laravel.com/docs/5.6/database
+10. Run: php artisan migrate
+11. Run phpunit tests unsing command: phpunit
+12. Setup in .env file: APP_URL=http://localhost:8000
+13. Setup run cofiguration on local host using port 8000 and run the web
+14. Run command: php artisan dusk
 
 ----------------------------------------------------------------------------------------
 Epic: Add a feature to view all questions sorted by question id and also a search bar to search questions containing typed search query. Both features should be accessible from all pages.
