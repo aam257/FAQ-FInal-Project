@@ -37,9 +37,9 @@ class SearchTest extends DuskTestCase
     {
         $this->browse(function (Browser $browser) {
             $browser->visit('/home')
-                ->type('search','hi')
+                ->type('search','New')
                 ->press('Search')
-                ->assertSee('hi');
+                ->assertSee('New');
         });
     }
 
