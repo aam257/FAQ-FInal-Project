@@ -7,7 +7,7 @@ To run the FAQ project:
 3. cp .env.example to .env
 4. run: php artisan key:generate
 
-5. In .env file copy lines 6, 7 and 8 to setup algolia app id and search key:
+5. In .env file copy lines 6, 7 and 8 at the bottom of page to setup algolia app id and search key:
 
 6. SCOUT_QUEUE
 7. ALGOLIA_APP_ID=X3NOGW7Y3S
