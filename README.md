@@ -17,8 +17,9 @@ To run the FAQ project:
 10. Run: php artisan migrate
 11. Run phpunit tests unsing command: phpunit
 12. Setup in .env file: APP_URL=http://localhost:8000
-13. Setup run cofiguration on local host using port 8000 and run the web
-14. Run command: php artisan dusk
+13. Setup run cofiguration on local host using port 8000 
+14. Run the website
+15. Run command: php artisan dusk
 
 ----------------------------------------------------------------------------------------
 Epic: Add a feature to view all questions sorted by question id and also a search bar to search questions containing typed search query. Both features should be accessible from all pages.
